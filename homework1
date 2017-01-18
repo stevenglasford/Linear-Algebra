@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main() {
+  int q;
+  printf("Please enter the question you want to see \n");
+  printf("enter number 1-7 \n");
+  scanf("%d", &q);
+  
+  if q==3 {
+    printf("Do you want me to tell you if the following equation has infinitely many solutions or,\ndo you want me to explain why this problem's situation is the way it is?\n");
+	printf("x_1-3*x_2=1 \n 2*x_1+h*x_2=k \n");
+	printf("type '1' for the first option, '2' for the second option\n");
+	int m, y;
+	scanf("%d", &m);
+
+
+
+	if (m==1) {
+		printf("You have opted to see if your values for 'k' an 'h' make the system have infinitelymany solutions, no solutions, or one solution.\n");
+
+		printf("What is your value for 'h'?\n");
+		double h, k;
+		scanf("%lf", &h);
+		printf("What is your value for 'k'?\n");
+		scanf("%lf", &k);
+
+		if ( -3-h/2 == 0, 0 == -k/2) {
+			printf("The values will have infinitely many solutions \n");
+			y=2;
+		}
+
+		if ( -3-h/2 == 0, -k/2 != 0) {
+			printf("Your system will have no solutions");
+		}
+
+		if (y!=2) {
+			if ( -3-h/2 != 0 ) {
+				printf("Your system will have only one real solution");
+			}
+		}
+
+	}
+
+	if (m==2) {
+		printf("This function is currently unavailable, and will probably never be available, sorry if this causes any disruptions to your daily life \n");
+	}
+  }
+ if q==4 {
+    printf("An 'underdetermined system' cannot have a unique solution \n");
+	printf("An underdetermined system either has infinitely many solutions, or is inconsistent \n");
+  }
+  
+  if q!=3,q!=4;
+  {  printf("I am sorry put I don't understand. \n Terminating now.\n"}
+  
+  
+  
+printf("Thank you for choosing Walgreens Pharmacy");
+
+	return 0;
+}
